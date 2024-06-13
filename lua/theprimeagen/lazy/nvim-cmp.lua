@@ -27,7 +27,7 @@
             sources = {
                 { name = 'buffer' },
                 { name = 'nvim_lsp' },
-                { name = 'ultisnips' },
+                -- { name = 'ultisnips' },
             },
         })
     	vim.opt.completeopt = { "menu", "menuone", "noselect" }

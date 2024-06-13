@@ -50,6 +50,16 @@ return {
                         }
                     }
                 end,
+
+                ["ruff"] = function()
+                    local lspconfig = require("lspconfig")
+                    lspconfig.ruff.setup {
+                        capabilities = capabilities,
+                        settings = {
+                            nativeServer = true,
+                        }
+                    }
+                end,
             }
         })
 
