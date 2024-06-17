@@ -3,6 +3,7 @@ return {
     dependencies = {
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
+        "WhoIsSethDaniel/mason-tool-installer.nvim",
         "hrsh7th/cmp-nvim-lsp",
         "hrsh7th/cmp-buffer",
         "hrsh7th/cmp-path",
@@ -24,15 +25,18 @@ return {
 
         require("fidget").setup({})
         require("mason").setup()
+        require("mason-tool-installer").setup({
+            ensure_installed = {
+                "mypy",
+                "cpptools",
+                "clang-format",
+            },
+        })
         require("mason-lspconfig").setup({
             ensure_installed = {
                 "lua_ls",
                 "rust_analyzer",
                 "ruff",
-                "black",
-                "mypy",
-                "cpptools",
-                "clang-format",
                 "clangd",
             },
             handlers = {
