@@ -28,7 +28,12 @@ return {
             ensure_installed = {
                 "lua_ls",
                 "rust_analyzer",
-                "ruff"
+                "ruff",
+                "black",
+                "mypy",
+                "cpptools",
+                "clang-format",
+                "clangd",
             },
             handlers = {
                 function(server_name) -- default handler (optional)
