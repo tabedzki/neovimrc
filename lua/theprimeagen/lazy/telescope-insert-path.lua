@@ -6,6 +6,7 @@ M.config = function()
     local path_actions = require('telescope_insert_path')
 
     require('telescope').setup {
+        event="VeryLazy",
         defaults = {
             mappings = {
                 n = {
