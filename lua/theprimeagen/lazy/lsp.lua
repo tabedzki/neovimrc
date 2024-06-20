@@ -14,6 +14,7 @@ return {
         "j-hui/fidget.nvim",
     },
 
+    event = "VeryLazy",
     config = function()
         local cmp = require('cmp')
         local cmp_lsp = require("cmp_nvim_lsp")
@@ -39,6 +40,7 @@ return {
                 "ruff",
                 "clangd",
             },
+            event="VeryLazy",
             handlers = {
                 function(server_name) -- default handler (optional)
 

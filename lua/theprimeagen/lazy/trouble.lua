@@ -4,6 +4,7 @@ return {
         config = function()
             require("trouble").setup({
                 icons = false,
+                event="VeryLazy"
             })
 
             vim.keymap.set("n", "<leader>tt", function()
