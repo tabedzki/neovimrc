@@ -14,7 +14,7 @@ return {
         "j-hui/fidget.nvim",
     },
 
-    event = "VeryLazy",
+    -- event = "VeryLazy",
     config = function()
         local cmp = require('cmp')
         local cmp_lsp = require("cmp_nvim_lsp")
@@ -28,7 +28,6 @@ return {
         require("mason").setup()
         require("mason-tool-installer").setup({
             ensure_installed = {
-                "mypy",
                 "cpptools",
                 "clang-format",
             },
@@ -39,8 +38,9 @@ return {
                 "rust_analyzer",
                 "ruff",
                 "clangd",
+                "pyright",
             },
-            event="VeryLazy",
+            -- event="VeryLazy",
             handlers = {
                 function(server_name) -- default handler (optional)
 

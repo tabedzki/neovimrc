@@ -13,6 +13,8 @@
     		"hrsh7th/cmp-cmdline",
     		"saadparwaiz1/cmp_luasnip",
     		"L3MON4D3/LuaSnip",
+    		"sirver/ultisnips",
+            "quangnguyen30192/cmp-nvim-ultisnips",
     	},
     }
 
@@ -27,7 +29,7 @@
             sources = {
                 { name = 'buffer' },
                 { name = 'nvim_lsp' },
-                -- { name = 'ultisnips' },
+                { name = 'ultisnips' },
             },
         })
     	vim.opt.completeopt = { "menu", "menuone", "noselect" }
